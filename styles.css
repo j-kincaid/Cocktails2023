@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Sans+Pro&display=swap');
+/* Colors
+DARK PURPLE
+MEDIUM PURPLE
+OLIVE
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap');
+
 
 html,
 body,
@@ -24,102 +32,75 @@ section {
   font-size: 100%;
   font: inherit;
 }
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f6f4fd;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+}
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.75em;;
+}
+h3 {
+  font-size: 1.75em;
+}
+h1,
+h2,
+h3 {
   color: #210964;
 }
-
 nav,
 footer {
   background-color: #672df0;
   font-family: 'Dancing Script', cursive;
 }
-
 nav a {
   color: white;
   text-decoration: none;
 }
-
-footer {
-  padding-top: 20px;
-  height: 50px;
-  color: white;
-  text-align: center;
+img {
+	display: block;
+	margin: 0 auto;
+}
+.intro, 
+.content {
+	margin-left: 20px;
 }
 
-ul {
-  list-style-type: none;
+.content ul {
+	list-style-type: none;
 }
 
-li {
-  padding-top: 40px;
-  margin-right: 15px;
-  margin-left: 15px;
+.content div + div {
+	margin-top: 50px;
 }
 
-h2 {
-  padding-top: 30px;
-  margin-left: 15px;
+.coding {
+	color: #d0c675;
+	font-size: 20px;
+	font-weight: bold;
+	transition: color 1s, font-size 1s;
 }
 
-p {
-  font-size: 1.25em;
+.meet li::first-letter {
+	font-size: 150%;
+  font-weight: 700;
 }
-
-main li:hover {
-  border: 2px solid white;
-}
-
-.navbar ul {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-gap: 10px;
-  justify-content: right;
-  justify-items: center;
-  font-size: 1.5em;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero-text h1 {
-  font-size: 5em;
-}
-
-.hero-text h2 {
-  font-size: 1.5em;
-}
-
-.drinks {
-  background-color: #fbfcfd;
-  padding-bottom: 60px;
-}
-
-.drinks h2 {
-  font-size: 3em;
-}
-
-.drinks li {
-  border-top: 1px dotted white;
-  padding-top: 40px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-h3.beverage {
-  font-size: 1.5em;
-}
-
-.beverage::before {
-  font: var(--fa-font-solid);
-  content: '\f57b';
+.intro > button,
+.cocktail > button {
+	background-color: #9d81a2;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
 }
